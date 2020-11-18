@@ -15,7 +15,7 @@ func NewPortainer(c *Config) Portainer {
 	return Portainer{
 		Config: c,
 		Token:  "",
-		ApiURL: fmt.Sprintf("%s://%s:%s%s", c.Schema, c.Host, c.Port, c.URL),
+		ApiURL: fmt.Sprintf("%s://%s:%d%s", c.Schema, c.Host, c.Port, c.URL),
 	}
 }
 

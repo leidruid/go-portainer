@@ -2,7 +2,7 @@ package portainer
 
 type Config struct {
 	Host     string
-	Port     string
+	Port     int
 	Schema   string
 	User     string
 	Password string
